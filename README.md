@@ -17,7 +17,7 @@ A custom, compact velocity-sensitive digital synthesizer, made with Hall-Effect 
 ## Schematic
 So much time off-camera spent on research and hunting down parts. This was a shockingly massive undertaking. I really should have learned signals & systems before doing this. Or maybe taken apart an existing synth. Or maybe tried something smaller. Oh well!
 
-Six main problems for the schematic:
+Five main problems for the schematic:
 - Not enough pins. 24 hall-effect keys all need ADC (analog to digital) pins. 6 rotary encoders. A display. Some pins also have specialized functions, so not all pins are interchangeable. 
 - Different demands on power supply. Linear hall-effect sensors run on 3V3. Sound systems generally run on 5V. LiPo Batteries supply 3.7V - 4.2V. The daisy seed can supply 3V3 but I don't think it has enough to power all the systems that need it, and it definitely doesn't have 5V. 
 - Enough power?? This might take a lot of power? 
