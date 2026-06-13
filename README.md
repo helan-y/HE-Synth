@@ -1,7 +1,7 @@
 # HE Synth
 
 ## About
-A custom, compact velocity-sensitive digital synthesizer, made with Hall-Effect keyswitches and DaisySeed. I want to make music and I do not have money but I do have blood, sweat, and many, many tears. This is also a proof of concept towards bigger projects I want to make in the future!
+A custom, compact, modular velocity-sensitive digital synthesizer, made with Hall-Effect keyswitches and DaisySeed. I want to make music and I do not have money but I do have blood, sweat, and many, many tears. This is also a proof of concept towards bigger projects I want to make in the future!
 - synth with trackballs for keys! like a roli seaboard but weird and isomorphic! what if piano could vibrato!!
 - bigger modular midi (repeating pcb boards in series one for each octave) keyboard with keycaps like piano keys!
 - sampler! vocoder! etc!
@@ -89,5 +89,12 @@ Three of these for this particular iteration!
 
 ### Power Distribution Board
 - 1x USB Receptacle
+<<<<<<< HEAD
 - 3x 2-Pin Male Header JST-PH
 - 1x 3-Pin Male Header JST-PH
+=======
+- 
+
+
+Three of these for this particular iteration!
+>>>>>>> 0ecc9d41ad0e1a37aad2298a6453eb0b33dcce32
