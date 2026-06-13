@@ -54,7 +54,6 @@ So the PCB design is going to be divided into three parts:
     - STM32 MCU Chip
     - UART connected in series
 
-
 ## PCB
 
 ## CAD
@@ -72,6 +71,7 @@ So the PCB design is going to be divided into three parts:
 - 1x 4-pin Male Header JST-PH
 - 2x DIN-5 MIDI Jack
 - 1x 3.5mm Headphone Jack
+- 2x PJ-320 Jacks
 - 1x Optocoupler
 - 1x Speaker
 
@@ -79,12 +79,15 @@ So the PCB design is going to be divided into three parts:
 - 12x Gateron Jade Magnetic Switches
 - 12x Linear Hall-Effect Sensors
 - 1x STM32
-- x Capacitors
-- 
+- 12x 0.1uF Capacitors
+- 1x 2-Pin Male Header JST-PH 
+- 1x 4-Pin Male Header JST-PH
+- 1x RS-485
+- 1x 3-Bit DIP Switch
+
+Three of these for this particular iteration!
 
 ### Power Distribution Board
 - 1x USB Receptacle
-- 
-
-
-Three of these for this particular iteration!
+- 3x 2-Pin Male Header JST-PH
+- 1x 3-Pin Male Header JST-PH
