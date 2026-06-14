@@ -89,12 +89,6 @@ Three of these for this particular iteration!
 
 ### Power Distribution Board
 - 1x USB Receptacle
-<<<<<<< HEAD
 - 3x 2-Pin Male Header JST-PH
 - 1x 3-Pin Male Header JST-PH
-=======
 - 
-
-
-Three of these for this particular iteration!
->>>>>>> 0ecc9d41ad0e1a37aad2298a6453eb0b33dcce32
