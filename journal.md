@@ -106,3 +106,38 @@ wiring this was genuinely a nightmare. one layer is reserved for the GND plane f
 ![image](/Journal%20Images/log_3.5.png)
 
 I'M FREEEEE
+
+# journal #4: laying out the main PCB
+
+(extra hour for off lapse work) 
+
+honestly a lot of just wrangling the layout and figuring out where the plugs are supposed to go?? and mapping out the regions of the pcb?? and then figuring out if it was fine??
+- ports: i know i want at least a midi-in, a usb-c for independent power and data-output, and a few audio in and audio out ports. i also need to have a 3.5 mm headphone jack.
+- these all need to be on the boundaries of the board. 
+- i also have a 10-pin header for the display, but that needs to be close to the daisy, so i can shove a few ports and things "underneath" where the screen is going to be. i do need to get the dimensions of the thing but they are not listed.... it's 2.8 and 240x320, so i guess i just need to do pythagorean theorem ???? i'm not sure that's how it works. anyway this is a preliminary draft
+- i also want this to be able to function as a standalone instrument (hence the usb port for alternative power) so the keys are in a vaguely octave formation. they don't have anything fancy though unfortunately. 
+
+![image](/Journal%20Images/log_4.1.png)
+![image](/Journal%20Images/log_4.2.png)
+![image](/Journal%20Images/log_4.3.png)
+
+# journal #5: off-screen research & planning
+
+a few changes through the research and planning:
+1. i don't want a separate power distribution board. i could probably fit that on the main PCB. plus the separate PDB would just be inconvenient. i thought it might introduce noise but it probably won't be an issue. 
+2. i want there to be a separate midi processing board so that the chained octave boards bit can be separate. these should exist as **two separable halves**, the **hall-effect midi-controller** and the **daisy synth**. i also want to make separate cases for them ! that would be fun. the reason i'm not designing them separately is that the midi-controller bit transmits data through uart, and some of that would be lost if i converted it straight to midi. for example: the hall-effect sensor doesn't really track velocity. it tracks the position of a magnet in the switch above. so it can actually function as a slider, which would be really cool for things like volume, vibrato, and other effects. that would be lost if it went to midi. 
+3. the separate midi processing board also needs to have a power section. luckily, it basically only uses 3V3, so i really only need a buck-boost to 3V3 or an LDO. 
+4. i want there to be leds for the octave PCBs... i think i'm back for another world of suffering. but it would be so useful. highlighting notes that are in a scale? having a gradient of color for what position the sensor is currently detecting? it would genuinely be so worth it. 
+5. so i'm due for another bout of pain and suffering. i genuinely think it might be worth it to make this a 4 layer board at this point
+![image](/Journal%20Images/log_5.1.png)
+this should be the general layout at this point, enclosed in one case
+
+# journal #6: 
+a revision to the earlier diagram:
+![image](/Journal%20Images/log_6.1.png)
+the midi PCB should be on the right, as that's the direction the uart is supposed to flow. because of the side the rs-485 in on. 
+
+so i decided to add leds to the octave pcbs. and also rc filtering. and i've also decided to give it two speakers and make it stereo. 
+
+# jounal #7: main PCB schematic
+

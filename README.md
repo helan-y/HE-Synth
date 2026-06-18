@@ -12,7 +12,7 @@ I want to make music and I do not have money but I do have blood, sweat, and man
 ## Features
 Hardware features:
 - Velocity-sensitive! Aftertouch! Two/three/more octaves!
-- Fully *modular*. Add more octaves, swap out MIDI controllers, swap out the synthesizer. Assembled with separate custom PCB boards for maximum customizability. 
+- Fully **modular**. Add more octaves, swap out MIDI controllers, swap out the synthesizer. Assembled with separate custom PCB boards for maximum customizability. 
 - In-build audio! 3.5 mm headphone jack or speaker. 
 
 Constantly updating firmware:
